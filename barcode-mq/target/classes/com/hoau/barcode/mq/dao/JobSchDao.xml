@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hoau.barcode.mq.dao.JobSchDao">
+    <resultMap id="BaseResultMap" type="com.hoau.barcode.mq.entity.JobSchEntity">
+        <result column="ID" property="id" />
+        <result column="TRIGGER_NAME" property="triggerName" />
+        <result column="JOB_NAME" property="jobName" />
+    </resultMap>
+
+    <select id="query" resultMap="BaseResultMap">
+        select
+        ID,TRIGGER_NAME,JOB_NAME
+        from QRTZ_JOB_SCHEDULES
+    </select>
+
+</mapper>
