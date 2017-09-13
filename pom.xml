@@ -19,7 +19,6 @@
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc14</artifactId>
             <version>10.2.0.1.0</version>
-            <scope>${environment.scope}</scope>
         </dependency>
     </dependencies>
 
@@ -34,6 +33,4 @@
             </resource>
         </resources>
     </build>
-
-
 </project>

@@ -25,4 +25,5 @@ public class JobSchController {
     public List<JobSchEntity> query(){
         return jobSchService.query();
     }
+
 }

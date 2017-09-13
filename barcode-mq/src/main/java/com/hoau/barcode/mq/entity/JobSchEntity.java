@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public class JobSchEntity implements Serializable {
 
+    private static final long serialVersionUID = 3476957350283469052L;
     private String id;
 
     private String triggerName;
